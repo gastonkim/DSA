@@ -1,0 +1,50 @@
+The JavaScript language contains three variables declaration keywords named var, let and const which operate differently with regard to scope mechanisms and assignment capabilities and industry recommendations.
+
+Blocks do not influence var variables which function scope limits.
+JavaScript defines var as a function scope variable which operates inside the declaring function boundaries without any block limitations.
+Block scope applies to let and const declarations since these variables exist only within their block definition brackets.
+
+The capabilities of reassignment differ between the var and let and const statements (Can Be and Cannot Be)
+var: Can be reassigned
+let: Can be reassigned
+A constant declaration with const blocks further changes preventing it from assignment redefinition yet allowing direct modifications of objects or array content inside this scope.
+
+Best Practices
+You should avoid using var because it does not have block-scope capabilities which creates the possibility of errors.
+The use of let statements becomes necessary when variables require reassignment such as in loop counter operations or value updates.
+Whenever a variable requires preservation of its unchanging state use const to achieve immutable values whenever possible.
+
+
+PART 2
+
+JavaScript determines six expressions as falsy values which evaluate as false during conditional tests. The only six possible falsy values in JavaScript comprise false, 0, empty string (""), null, undefined, and NaN. Any value from this set placed inside the condition of an if statement makes the code block fail to execute because JavaScript perceives them as false. A developer can employ this method for checking variable validity before executing an action. In the case of checking user name entry we need to avoid continuing execution when an empty string value is detected because empty strings evaluate as falsy. Familiarity with falsy values provides developers means to create more efficient and compact JavaScript code.
+
+1.
+let name = "";
+if (name) {
+    console.log("Name is set");
+} else {
+    console.log("Name is empty (falsy)");
+}
+
+ An empty string is considered falsy because it has no content.
+
+2.
+let num = 0;
+if (num) {
+    console.log("Number is valid");
+} else {
+    console.log("0 is falsy");
+}
+
+The number 0 is falsy because it represents nothing.
+
+3.
+let data = null;
+if (data) {
+    console.log("Data is available");
+} else {
+    console.log("Data is null (falsy)");
+}
+
+null means "no value," so it is falsy.
