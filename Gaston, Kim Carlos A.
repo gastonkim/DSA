@@ -48,3 +48,8 @@ if (data) {
 }
 
 null means "no value," so it is falsy.
+
+
+REFERENCE
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var_let_const
+https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75
