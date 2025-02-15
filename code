@@ -1,0 +1,1 @@
+let birtdate = prompt("enter your birthdate: ");
